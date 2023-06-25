@@ -1,0 +1,54 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 58px);
+}
+
+.key {
+  height: 49px;
+  color: rgb(236,236,236);
+  font-size: 22px;
+  outline: none;
+  border: 0.5px solid rgb(90,87,86);
+  background-color: rgb(133,131,131);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.key:active {
+  background-color: rgb(181,179,177);
+}
+
+.key.math-operation {
+  background-color: rgb(255,158,11);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.key.math-operation:active {
+  background-color: rgb(202,125,4);
+}
+
+.key.calculator-operation {
+  background-color: rgb(107,103,99);
+  font-size: 18px;
+}
+
+.key.calculator-operation:active {
+  background-color: rgb(133,131,131);
+}
+
+.key.active-operation {
+  border-width: 1.5px;
+}
+
+.key-zero {
+  grid-column: span 2;
+  border-bottom-left-radius: 10px;
+}
+
+.key-equals {
+  border-bottom-right-radius: 10px;
+}
